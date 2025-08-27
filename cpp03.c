@@ -1,0 +1,37 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+class car
+{
+ public:
+  string brand;
+  string model;
+  int year;
+  car(string x,string y,int z)
+    {
+      brand = x;
+      model = y;
+      year = z;
+    }
+  void printcar()
+    {
+      cout<<brand<<","<<model<<","<<year<<endl;      
+    }
+};
+int main()
+{
+  car cobj1("BMZ","F1",1733);
+  car cobj2("ZUZUKI","XINS",1943);
+  car cobj3("FUSTER","DWID",1934);
+
+  //  cout<<cobj1.brand<<","<<cobj1.model<<","<<cobj1.year<<endl;
+  //  cout<<cobj2.brand<<","<<cobj2.model<<","<<cobj2.year<<endl;
+  cobj2.printcar();
+  cobj1.printcar();
+  cobj3.printcar();
+  return 0;
+  
+}
+
